@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <title>Explore Ghana | Contact Us</title>
   <link rel="stylesheet" href="style.css">
-  <script src="js/main.js" defer></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header>
-     <div class="logo">Explore Ghana</div>
+      <div class="logo"><a href="index.html" class="a1">Explore Ghana</a></div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -20,23 +21,93 @@
     </nav>
   </header>
 
-  <section class="page-title">
-    <h1>Contact Us</h1>
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
   </section>
-
-  <form class="contact-form">
-    <label>Name</label>
-    <input type="text" name="name" required>
-
-    <label>Email</label>
-    <input type="email" name="email" required>
-
-    <label>Message</label>
-    <textarea name="message" required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-
-  <footer>...</footer>
+<footer>
+  <div class="footer-content">
+    <div class="footer-col">
+      <p><strong>&copy; 2025 Explore Ghana.</strong><br>All Rights Reserved.</p>
+    </div>
+    <div class="footer-col">
+      <p>
+        Discover the beauty, culture, and adventure that Ghana has to offer. From historic landmarks to breathtaking natural wonders, our mission is to inspire and guide travelers in experiencing the very best of Ghanaian tourism. Plan your journey and create unforgettable memories with Explore Ghana.
+      </p>
+    </div>
+    <div class="footer-col">
+      <p>
+        <strong>Contact Us:</strong><br>
+        <a href="mailto:info@exploreghana.com">info@exploreghana.com</a><br>
+        <a href="contact.html">Contact Form</a>
+      </p>
+    </div>
+  </div>
+</footer>
+<style>
+footer {
+  background: #1a1a1a;
+  color: #f2f2f2;
+  padding: 32px 0 16px 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  border-top: 4px solid #eab308;
+}
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  gap: 32px;
+}
+.footer-col {
+  flex: 1 1 250px;
+  min-width: 220px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer a {
+  color: #eab308;
+  text-decoration: none;
+  transition: color 0.2s;
+  word-break: break-all;
+}
+footer a:hover {
+  color: #fffbe6;
+  text-decoration: underline;
+}
+footer p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+@media (max-width: 800px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+  .footer-col {
+    margin: 0 0 24px 0;
+    min-width: unset;
+  }
+}
+</style>
+</footer>
+  
 </body>
 </html>
