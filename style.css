@@ -260,3 +260,53 @@ h2 {
   text-decoration: none;
   transition: color 0.2s;
 }
+footer {
+  background: #1a1a1a;
+  color: #f2f2f2;
+  padding: 32px 0 16px 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  border-top: 4px solid #eab308;
+}
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  gap: 32px;
+}
+.footer-col {
+  flex: 1 1 250px;
+  min-width: 220px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer a {
+  color: #eab308;
+  text-decoration: none;
+  transition: color 0.2s;
+  word-break: break-all;
+}
+footer a:hover {
+  color: #fffbe6;
+  text-decoration: underline;
+}
+footer p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+@media (max-width: 800px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+  .footer-col {
+    margin: 0 0 24px 0;
+    min-width: unset;
+  }
+}
